@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Paul</title>
+    <link rel="icon" type="image/png" href="Images/Logo_MAPLE_LEAF.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <canvas id="leaf-canvas"></canvas>
+    <header class="navbar" id="navbar">
+        <a href="#Home" class="nav-logo">
+            <img src="Images/Silver-MAPLE_LEAF.png" alt="Maple leaf logo">
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Education">Education</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Interests">Interests</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <!--- First Home Page -->
+    <section id="Home">
+        <div class="main">
+            <h1>Sarah Paul.</h1>
+            <p>Software Engineering Student</p>
+            <h2><i>To Code is To Create</i></h>
+        </div>
+
+    </section>
+    <!--- About Me -->
+    <section id="About">
+        <div class="about-me">
+            <div class="img-box">
+                <img src="Images/IMG_0047.JPG" alt="Sarah Paul">
+            </div>
+            <div class="about-info">
+                <h2>About Me</h2>
+                <h3>Who am I ?</h3>
+                <p>Hey I am a Software Engineering student who loves coding, enjoy learning how software works and turning ideas into something people can actually use. I am especially interested in web development, software development, and artificial intelligence.</p> <br>
+                <h3>What I do ?</h3>
+                <p>A Software Engineering student at the University of Stirling, RAK with an interest in software development, web technologies, and artificial intelligence. I enjoys building practical projects, experimenting with new technologies, and solving problems through code.</p> <br>
+                <h3>What to expect ?</h3>
+                <p>Expect to see a collection of my work, projects, skills, and experiences as I continue my journey in Software Engineering.This website showcases what I have learned so far, the technologies I have explored, and the projects I have worked on. As I continue learning and building, this portfolio will continue to grow with me.</p> <br>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Education">
+        <div class="education-project">
+            <div class="education">
+                <h2>Eductaion</h2>
+                <h3>BSc Software Engineering</h3>
+                <p><i>2024 - prsent</i></p>
+                <p><b>University of Stirling - RAK</b></p>
+                <p>
+                Currently progressing through the Software Engineering programme with coursework covering programming,<br> data structures and algorithms, databases, mathematics, and software development.
+                </p> <br>
+
+                <h3>School</h3>
+                <p><i>Completed 2024</i></p>
+                <p><b>Our Own English High School - Sharjah</b></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section id="Projects">
+        <div class="projects">
+                <h2>Projects</h2>
+                <p class="section-intro">
+                    A collection of projects I have worked on while learning and exploring
+                    software development.
+                </p>
+
+                <div class="project-container">
+
+                    <div class="project-card ">
+                        <h3>Helios</h3>
+                        <p>
+                            A system monitoring application that uses machine learning
+                            to detect unusual system behaviour. It collects CPU, RAM,
+                            disk, and network information and presents the results
+                            through an interactive dashboard.
+                        </p>
+
+                        <p class="technologies">
+                            Python · Flask · SQLite · JavaScript · Chart.js · Machine Learning
+                        </p>
+                        <div class="website-github">
+                            <a href="#https://github.com/SarahPaul926/helios-observability-platform">View Project</a>
+                            <a href="https://helios-observability.onrender.com/"><img src="Images/Website_Code.png" alt="Website-Code"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <h3>Market Narrative Tracker</h3>
+                        <p>
+                            A web application that explores financial news and market
+                            narratives. Users can search for topics and view related
+                            information through an interactive interface.<br>
+                            <i>Still on work....</i>
+                        </p>
+
+                        <p class="technologies">
+                            Python · Flask · JavaScript · Chart.js · News API
+                        </p>
+
+                        <div class="website-github">
+                            <a href="https://github.com/R221106/Imppulse">View Project</a>
+                            <a href="https://imp-pulse.onrender.com/"><img src="Images/Website_Code.png" alt="Website-Code"></a>
+                        </div>
+                        
+                    </div>
+ 
+                    <div class="project-card">
+                        <h3>Snake Game</h3>
+                        <p>
+                            A research project exploring independent Q-learning for
+                            adaptive traffic signal control. The project investigates
+                            how reinforcement learning can respond to changing traffic
+                            conditions and incidents.
+                        </p>
+
+                        <p class="technologies">
+                            Python · Reinforcement Learning · Q-Learning · SUMO · TraCI
+                        </p>
+
+                        <a href="https://github.com/SarahPaul926/Snake-Game--JavaSwing">View Project </a>
+                    </div>
+
+
+                    <div class="project-card">
+                        <h3>REWIND: Retro Revival </h3>
+                        <p>
+                            An interactive web experience exploring why aesthetics from
+                            the 1990s and 2000s have become popular again among younger
+                            generations.
+
+                        </p>
+
+                        <p class="technologies">
+                            HTML · CSS · JavaScript · Bootstrap
+                        </p>
+
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="Interests">
+        <div class="interests-Languages">
+            <div class="interests">
+                <h2>Interests</h2>
+                <p>My interests lie in software development and web development, where I enjoy turning ideas into practical and creative digital experiences. I am also interested in artificial intelligence, data and algorithms, and problem solving, especially when they involve finding efficient and meaningful solutions. I enjoy exploring new technologies and experimenting with different ways to make websites and software more interactive and engaging.</p>
+                <h2>Tools</h2>
+                <div class="tools">
+                    <div class="tool">Streamlit</div>
+                    <div class="tool">Flask</div>
+                    <div class="tool">Github</div>
+                    <div class="tool">VS Code</div>
+                    <div class="tool">Jupyter</div>
+                </div>
+                
+            </div>
+            
+            <div class="languages">
+                <h2>Languages</h2>
+                <div class="column-1">
+                     <div class="lang">
+                        <img src="Images/Java.png" alt="Java Img">
+                        <p>Java</p>
+                    </div>
+                    <div class="lang">
+                        <img src="Images/Python.png" alt="">
+                        <p>Python</p>
+                    </div> 
+                    <div class="lang">
+                        <img src="Images/SQL.png" alt="">
+                        <p>SQL</p>
+                    </div>
+                    <div class="lang">
+                        <img src="Images/C.png" alt="">
+                        <p>C Langauge </p>
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div class="lang">
+                        <img src="Images/HTML.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="lang">
+                        <img src="Images/CSSS.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="lang">
+                        <img src="Images/JS.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--Conatact Me-->
+    <section>
+        <div class="contact-session">
+            <div class="side-heading">
+                <h3>Lets </h3>
+                <h3>Connect</h3>
+                <p>Open to internship opportunities, software development projects, and opportunities to learn and grow.</p> 
+                <div class="connect-logo">
+                    <a href="mailto:paulsarah926@gmail.com" ><img src="Images/Email.png" alt="E-mail"></a>
+                    <a href="https://github.com/SarahPaul926"><img src="Images/Github.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/sarahpaul926/"><img src="Images/Linkdin.png" alt="Github"></a>
+                </div>
+            </div> 
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                <input type="hidden" name="access_key" value="f24e3332-b317-4708-af56-ba2b00910016">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" placeholder="First name" name="first_name" required>
+                    </div>
+                    <div class="col">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last name" aname="last_name" required>
+                    </div>
+                </div>
+                <label for="exampleFormControlInput" class="form-label mb-2">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleFormControlInput" placeholder="name@example.com">
+                <div class="form-field">
+                    <label for="exampleFormControlSelect2" class="form-label">Example select</label>
+                    <select name="subject" class="form-control" id="exampleFormControlSelect2">
+                        <option>Choose one…</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="exampleFormControlTextarea2" class="form-label">Taller textarea</label>
+                    <textarea class="form-control" name="message" id="exampleFormControlTextarea2" rows="4"></textarea>
+                </div> 
+                <button type="submit" class="btn-burgundy">Submit</button> 
+            </form>
+        </div>
+    </section>
+    <footer class="footer-box">
+        <img src="Images/Silver-MAPLE_LEAF.png" alt="Maple leaf logo">
+        <h4>@2026 Sarah Paul</h4>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

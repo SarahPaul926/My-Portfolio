@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #A39287;
+    color: #3A1E1F;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: Harmond;
+    src: url(Fonts/Harmond-SemiBoldCondensed.otf) format("opentype");
+}
+
+/* --- Hero Section --- */
+.main {
+    display: grid;
+    place-items: center;
+    background: #635147;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inner-background {
+    margin: auto;
+    background-color: #A39287;
+    width: 88%;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.inner-background h1 {
+    font-family: Harmond, sans-serif;
+    color: #650015;
+    text-align: right;
+    font-size: clamp(80px, 12vw, 150px);
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.inner-background p {
+    color: #650015;
+    text-align: right;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.inner-background h2 {
+    color: #650015;
+    font-family: Harmond, sans-serif;
+    text-align: left;
+    font-size: clamp(30px, 5vw, 65px);
+    letter-spacing: 4px;
+    margin-top: 15%;
+}
+
+/* --- About Me Section --- */
+.about-me {
+    background-color: #A39287;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+    padding: 100px 8%;
+}
+
+.box {
+    display: grid;
+    place-items: center;
+    background-color: #635147;
+    width: 100%;
+    height: 520px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(15%);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+.box img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.03);
+}
+
+.about-info h2 {
+    font-family: Harmond, sans-serif;
+    font-size: clamp(50px, 7vw, 90px);
+    color: #650015;
+    margin-bottom: 10px;
+}
+
+.about-me h3 {
+    color: #650015;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.about-me p {
+    color: #3A1E1F;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* --- Education Section --- */
+.education-project {
+    background-color: #635147;
+    padding: 100px 8%;
+    min-height: auto;
+    display: block;
+}
+
+.education h2 {
+    font-family: Harmond, sans-serif;
+    color: #A39287;
+    font-size: clamp(50px, 7vw, 80px);
+    margin-bottom: 40px;
+}
+
+.education h3 {
+    color: #A39287;
+    font-size: 26px;
+    margin-top: 25px;
+}
+
+.education p {
+    color: #dfd3ce;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+.education b {
+    color: #ffffff;
+}
+
+/* --- Projects Section --- */
+.projects {
+    background-color: #A39287;
+    padding: 100px 8%;
+}
+
+.projects h2 {
+    font-family: Harmond, sans-serif;
+    color: #650015;
+    font-size: clamp(50px, 7vw, 90px);
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 18px;
+    color: #3A1E1F;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    place-items: stretch;
+}
+
+.project-card {
+    border-radius: 12px;
+    width: 100%;
+    background-color: #635147;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #A39287;
+    font-size: 28px;
+    font-family: Harmond, sans-serif;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #dfd3ce;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-card .technologies {
+    font-size: 13px;
+    color: #d1b8b0;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.project-card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    transition: gap 0.3s ease;
+}
+
+.project-card a:hover {
+    gap: 8px;
+    color: #A39287;
+}
+
+/* --- New Section Styling (Interests, Languages, Certificates, Contact) --- */
+
+/* Interests & Languages Section Grid Wrappers */
+body > h3 {
+    font-family: Harmond, sans-serif;
+    color: #650015;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+body > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body > ul li {
+    background-color: #635147;
+    color: #dfd3ce;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+body > ul li:hover {
+    transform: translateY(-3px);
+    background-color: #650015;
+    color: #ffffff;
+}
+
+/* Contact / Let's Connect Section */
+body > p:last-of-type {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 100px auto;
+    font-size: 18px;
+    color: #3A1E1F;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* --- Keyframe Animations --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 900px) {
+    .about-me {
+        grid-template-columns: 1fr;
+        padding: 60px 5%;
+    }
+    
+    .box {
+        height: 400px;
+    }
+}
